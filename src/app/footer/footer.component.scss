@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    background: #436B99;
+    color: white;
+    a{
+        color: white;
+        transition: .5s;
+    }
+    a:hover{
+        border: 1px solid white;
+        padding: .3rem;
+    }
+ 
+}
