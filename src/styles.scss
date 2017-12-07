@@ -5,10 +5,11 @@
 //font for header (home button)
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-body{
+html, body{
     background: #f2f2f2;
     margin: 0;
     padding: 0;
     font-family: Segoe UI;
     font-weight: lighter;
+    height: 100%;
 }
