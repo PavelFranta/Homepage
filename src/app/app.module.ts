@@ -12,6 +12,7 @@ import { ThrilledPavelComponent } from './thrilled-pavel/thrilled-pavel.componen
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { SocialPanelComponent } from './social-panel/social-panel.component';
+import { LookingForJobCommentsPanelComponent } from './looking-for-job-comments-panel/looking-for-job-comments-panel.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SocialPanelComponent } from './social-panel/social-panel.component';
     FooterComponent,
     ThrilledPavelComponent,
     HomeComponent,
-    SocialPanelComponent
+    SocialPanelComponent,
+    LookingForJobCommentsPanelComponent
   ],
   imports: [
     BrowserModule,
