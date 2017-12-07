@@ -4,3 +4,15 @@
     background-position: 50% -89%;
     height: 30rem;
 }
+p{
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    background: orange;
+    span{
+        font-weight: 400;
+    }
+}
+
