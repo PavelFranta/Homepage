@@ -12,11 +12,13 @@ import { ThrilledPavelComponent } from './thrilled-pavel/thrilled-pavel.componen
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { SocialPanelComponent } from './social-panel/social-panel.component';
-import { LookingForJobCommentsPanelComponent } from './looking-for-job-comments-panel/looking-for-job-comments-panel.component';
+import { HomeCommentsComponent } from './home-comments/home-comments.component';
 import { AboutComponent } from './about/about.component';
-import { AboutPavelPanelComponent } from './about-pavel-panel/about-pavel-panel.component';
+import { AboutCommentsComponent } from './about-comments/about-comments.component';
 import { KnowledgeComponent } from './knowledge/knowledge.component';
 import { KnowledgeCommentsComponent } from './knowledge-comments/knowledge-comments.component';
+import { QuestionComponent } from './question/question.component';
+import { QuestionCommentsComponent } from './question-comments/question-comments.component';
 
 
 @NgModule({
@@ -27,11 +29,13 @@ import { KnowledgeCommentsComponent } from './knowledge-comments/knowledge-comme
     ThrilledPavelComponent,
     HomeComponent,
     SocialPanelComponent,
-    LookingForJobCommentsPanelComponent,
+    HomeCommentsComponent,
     AboutComponent,
-    AboutPavelPanelComponent,
+    AboutCommentsComponent,
     KnowledgeComponent,
-    KnowledgeCommentsComponent
+    KnowledgeCommentsComponent,
+    QuestionComponent,
+    QuestionCommentsComponent
   ],
   imports: [
     BrowserModule,

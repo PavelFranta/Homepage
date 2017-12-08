@@ -1,0 +1,35 @@
+.questionAnswer{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1rem;
+    p{
+        width: 50%;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 400;
+        background: transparent;
+    }
+    p:nth-child(1){
+        text-align: right;
+    }p:nth-child(2){
+        text-align: left;
+    }
+   
+}
+.questionAnswer:nth-child(odd){
+    background: #fff;
+}
+p{
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    background: orange;
+    span{
+        font-weight: 400;
+    }
+}
