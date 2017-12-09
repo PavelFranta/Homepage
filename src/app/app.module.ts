@@ -19,6 +19,8 @@ import { KnowledgeComponent } from './knowledge/knowledge.component';
 import { KnowledgeCommentsComponent } from './knowledge-comments/knowledge-comments.component';
 import { QuestionComponent } from './question/question.component';
 import { QuestionCommentsComponent } from './question-comments/question-comments.component';
+import { PassionsComponent } from './passions/passions.component';
+import { PassionsCommentsComponent } from './passions-comments/passions-comments.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { QuestionCommentsComponent } from './question-comments/question-comments
     KnowledgeComponent,
     KnowledgeCommentsComponent,
     QuestionComponent,
-    QuestionCommentsComponent
+    QuestionCommentsComponent,
+    PassionsComponent,
+    PassionsCommentsComponent
   ],
   imports: [
     BrowserModule,

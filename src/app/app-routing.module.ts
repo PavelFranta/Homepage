@@ -1,3 +1,4 @@
+import { PassionsComponent } from './passions/passions.component';
 import { QuestionComponent } from './question/question.component';
 import { AboutComponent } from './about/about.component';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'knowledge', component: KnowledgeComponent },
   { path: 'questions', component: QuestionComponent },
+  { path: 'passions', component: PassionsComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
