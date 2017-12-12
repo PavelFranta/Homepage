@@ -1,27 +1,18 @@
-# pavelF | Homepage
+#HOW TO RUN IT 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
+1) Download or clone repository.
 
-## Development server
+2) If you don't have node.js, install it ( https://nodejs.org/en/ )
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3) Execute following command from your terminal: 'npm install -g @angular/cli'
+//now your computer knows what angular is and how to handle it.
 
-## Code scaffolding
+4) Open project folder from your terminal and execute another command: 'npm install'
+//will check and download all missing libraries and extensions.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+5) From project folder execute last command: 'ng serve -o'
+//angular cli will assemble and run this project. (flag -o means -open it in my default browser )
 
-## Build
+bonus) every change what you will do in this project will automatically refresh browser until the terminal with
+'ng serve' command is still running.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
