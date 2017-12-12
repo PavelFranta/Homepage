@@ -12,6 +12,7 @@ html, body{
     font-family: Segoe UI;
     font-weight: lighter;
     min-height: 100%;
+
     p.orange{
         margin: 0;
         padding: 1rem;
@@ -83,5 +84,14 @@ html, body{
     }
 }
 @media screen and (max-width: 1000px) {
-  
+  body{
+      p.orange{
+        font-size:calc(100% + 1.6vw);
+      }
+      div.commentsWrapper{
+          p.header{
+            font-size:calc(100% + 2vw);
+          }
+      }
+  }
   }

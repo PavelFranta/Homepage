@@ -1,7 +1,10 @@
+.questionsWrapper{
+    margin-top: -5rem;
 .questionAnswer{
     justify-content: center;
     display: flex;
     padding-bottom: 1rem;
+   
     p{
         width: 50%;
         margin: 0;
@@ -21,4 +24,15 @@
 }
 .questionAnswer:nth-child(odd){
     background: #fff;
+}
+}
+@media screen and (max-width: 1000px) {
+    .questionsWrapper{
+        .questionAnswer{
+            p{
+            font-size:calc(100% + 1.6vw);
+        }
+        }
+    }
+    
 }

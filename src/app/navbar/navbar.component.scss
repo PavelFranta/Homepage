@@ -1,3 +1,6 @@
+.superNavbarWrapper-gitButtonFixer{
+    height: 8.3rem;
+    overflow: hidden;  
 .navbarWrapper {
 display: flex;
   height: 3.2em;
@@ -46,9 +49,10 @@ display: flex;
       height: 2rem;
       width: 190.5px;
       position: relative;
-      //top:39px;
-      //left: 40px;
-      //transform: rotate(45deg);
+      top:39px;
+      left: 45px;
+      transform: rotate(45deg);
+      border: 1px dashed black;
      a{
          text-decoration: none;
          color: white;
@@ -62,6 +66,7 @@ display: flex;
   }
   .menuButton{
    position: absolute;
+   top: 9999px;
    background: #336B99;
    border: none;
    color: white;
@@ -71,14 +76,19 @@ display: flex;
    padding: 0;
   }
 }
+
+}
 @media screen and (max-width: 836px){
-.navbarWrapper{
-    .gitButton{
-        visibility: hidden;
+    .superNavbarWrapper-gitButtonFixer{
+    .navbarWrapper{
+        .gitButton{
+            display: none;
+        }
     }
 }
-}
+    }
 @media screen and (max-width: 650px){
+    .superNavbarWrapper-gitButtonFixer{
    .navbarWrapper{
        justify-content: space-between;
     ul{
@@ -99,8 +109,8 @@ display: flex;
     .menuButton{
         visibility: visible;
         position: static;
-        padding: 0 1rem 0 0;
-        margin-left: auto;
+       margin-left: auto;
+       padding-right: 1rem;
 
       }
     .material-icons{
@@ -125,3 +135,5 @@ a:focus{
     border: none;
 }
 }
+}
+

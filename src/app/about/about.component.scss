@@ -2,15 +2,14 @@ div.wrapperAbout{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -12rem;
  img{
 
     background-image: url(../../assets/new5.png);
     background-repeat: no-repeat;
     background-position: 50% -89%;
     background-size: 21.5rem auto;
-    height: 35rem;
-    margin-top: -10rem;
-   
+    height: 35rem; 
  }
  ul{
    list-style-type: none;
