@@ -1,39 +1,127 @@
-.wrapper {
-    z-index: 99;
-   position: relative;
-    display: flex;
+.navbarWrapper {
+display: flex;
   height: 3.2em;
   background: #336B99;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, .25);
-  top: 0;
-  a {
+  position: relative;
+  z-index: 99;
+  font: normal 1em 'Quicksand', sans-serif;
+  a.homeButton {
     text-decoration: none;
     margin-top: 0;
     padding: .08em 0em 0em 0.4em;
     color: white;
-    font: normal 2em 'Quicksand', sans-serif;
+    font-size: 2rem;
   }
   ul{
- 
-      display: flex;  
-      margin: auto;
-      padding-right: 12rem;
+      display: flex; 
+      align-items: center;
       list-style-type: none;
       color: white;
+      margin: 0 auto;
+      padding: 0;
       li{
-          padding: 0 1rem 0 1rem;
+          padding: 0 1%;
           a{
-              display:inline-block;
               margin-top: -1px;
               padding: .9rem;
-            font-size: 1.1rem;
+              font-size: 1.1rem;
               text-decoration: none;
               color: white;
+              transition: .5s;
           }
           a:hover{
+            transform: scale(1.1);
               background: white;
               color: #555;
+   
           }
       }
   }
+  .gitButton{
+      background: rgba(rgb(34, 86, 128), 0.678);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2rem;
+      width: 190.5px;
+      position: relative;
+      //top:39px;
+      //left: 40px;
+      //transform: rotate(45deg);
+     a{
+         text-decoration: none;
+         color: white;
+         transition: .5s;
+     }
+     a:hover{
+         transform: scale(1.1);
+         color: yellow;
+     }
+
+  }
+  .menuButton{
+   position: absolute;
+   background: #336B99;
+   border: none;
+   color: white;
+   visibility: hidden;
+   font-size: 0;
+   margin: 0;
+   padding: 0;
+  }
+}
+@media screen and (max-width: 836px){
+.navbarWrapper{
+    .gitButton{
+        visibility: hidden;
+    }
+}
+}
+@media screen and (max-width: 650px){
+   .navbarWrapper{
+       justify-content: space-between;
+    ul{
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+        display: block;
+       li{
+           padding: 0;
+           margin-top: 0;
+           a{
+               margin: 0;
+               padding: 0;
+               font-size: 0;
+           }
+       }
+    }
+    .menuButton{
+        visibility: visible;
+        position: static;
+        padding: 0 1rem 0 0;
+        margin-left: auto;
+
+      }
+    .material-icons{
+        font-size: 1.8rem;
+    }  
+    mat-menu{
+        button{
+        a{
+            color: black;
+            cursor: auto;
+            text-decoration: none;
+        }
+    }
+    }
+   }
+   a{
+    color: black;
+    cursor: auto;
+    text-decoration: none;
+}
+a:focus{
+    border: none;
+}
 }

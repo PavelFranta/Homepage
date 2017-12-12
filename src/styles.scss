@@ -11,5 +11,77 @@ html, body{
     padding: 0;
     font-family: Segoe UI;
     font-weight: lighter;
-    height: 100%;
+    min-height: 100%;
+    p.orange{
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;
+        font-style: italic;
+        background: rgb(253, 166, 25);
+        span{
+            font-weight: 400;
+        }
+    }
+    div.commentsWrapper{
+        padding-top: 2rem; 
+        height: auto;
+        width: 100%;
+        background: #fff;
+        font-size: 1.1rem;
+        div.comments{
+            padding: 3rem 1rem 0rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1600px;
+            margin: auto;
+            div.singleComment{
+                display: flex;
+                align-items: flex-start;
+                flex-basis: 0;
+                flex-grow: 1;
+                min-width: 350px;
+                padding: 0 0 2rem;
+                img{
+                    width: 6rem;
+                }
+                span.heroesNames{
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                }
+                span.heroesSupplement{
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: gray;
+                }
+                p{
+                    padding: 0 1rem;
+                }
+               
+            }
+        }
+        p.header{
+            margin: 0;
+            padding: 1rem 0 0 0;
+            text-align: center;
+            font-size: 2.1rem;
+          }
+          ul{
+              display: flex;
+              list-style-type: none;
+              border: 1px solid black;
+              padding: 0;
+              li{
+                 
+                  span.heroesNames{
+                      font-size: 1rem;
+                      font-weight: 400;
+                  }
+              }
+        }
+    }
 }
+@media screen and (max-width: 1000px) {
+  
+  }
