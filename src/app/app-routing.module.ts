@@ -1,11 +1,11 @@
-import { PassionsComponent } from './passions/passions.component';
-import { QuestionComponent } from './question/question.component';
-import { AboutComponent } from './about/about.component';
+import { PassionsComponent } from './tabs/passions/passions.component';
+import { QuestionComponent } from './tabs/question/question.component';
+import { AboutComponent } from './tabs/about/about.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { KnowledgeComponent } from './knowledge/knowledge.component';
+import { HomeComponent } from './tabs/home/home.component';
+import { KnowledgeComponent } from './tabs/knowledge/knowledge.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },

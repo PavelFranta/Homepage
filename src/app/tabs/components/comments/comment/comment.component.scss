@@ -1,0 +1,41 @@
+ div.singleComment {
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 350px;
+    padding: 0 0 2rem;
+
+    img {
+      width: 6rem;
+    }
+
+    span.heroesNames {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+
+    span.heroesSupplement {
+      font-size: 1rem;
+      font-weight: 300;
+      color: gray;
+    }
+
+    p {
+      padding: 0 1rem;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      border: 1px solid black;
+      padding: 0;
+
+      li {
+        span.heroesNames {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }

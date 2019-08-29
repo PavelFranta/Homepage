@@ -1,0 +1,6 @@
+<div class="commentsWrapper">
+  <p class="header">{{model.header}}</p>
+  <div class="comments row">
+    <app-comment class="col" [model]="comment" *ngFor="let comment of model.commentItems"></app-comment>
+  </div>
+</div>
