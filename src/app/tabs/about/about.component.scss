@@ -1,8 +1,7 @@
 div.wrapperAbout{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: -12rem;
+  justify-content: space-between;
  img{
     background-image: url(../../../assets/new5.png);
     background-repeat: no-repeat;
@@ -32,8 +31,18 @@ p{
     background: orange;
 }
 
-@media screen and (max-width: 780px) {
-  .about-interests {
+@media screen and (max-width: 940px) {
+  .about-interests-side {
     display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  div.wrapperAbout {
+    flex-direction: column-reverse;
+
+    div.about-interests-main {
+      text-align: center;
+    }
   }
 }

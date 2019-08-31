@@ -1,31 +1,23 @@
 <div class="superNavbarWrapper-gitButtonFixer">
-<div class="navbarWrapper">
-  <a class="homeButton" href=index.html>pavelFranta</a>
-  <ul>
+  <div class="navbarWrapper">
+    <a class="homeButton" routerLink="/home">pavelFranta</a>
+    <ul class="regularMenu">
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/knowledge">Knowledge</a></li>
+      <li><a routerLink="/questions">Questions</a></li>
+      <li><a routerLink="/passions">Passions</a></li>
+    </ul>
+    <div class="gitButton">
+      <a href="https://bitbucket.org/PavelChallenge/homepaget">I am on GIT</a>
+    </div>
+    <button class="menuButton">
+      <mat-icon (click)="displayBurgerMenu = !displayBurgerMenu">menu</mat-icon>
+    </button>
+  </div>
+  <ul *ngIf="displayBurgerMenu" class="burgerMenu">
     <li><a routerLink="/about">About</a></li>
     <li><a routerLink="/knowledge">Knowledge</a></li>
     <li><a routerLink="/questions">Questions</a></li>
     <li><a routerLink="/passions">Passions</a></li>
   </ul>
-  <div class="gitButton">
-      <a href="https://bitbucket.org/PavelChallenge/homepaget">I am on GIT</a>
-    </div>
-  <button class="menuButton" mat-icon-button [matMenuTriggerFor]="menu">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-        <a routerLink="/about">About</a>
-    </button>
-    <button mat-menu-item disabled>
-        <a routerLink="/knowledge">Knowledge</a>
-    </button>
-    <button mat-menu-item>
-        <a routerLink="/questions">Questions</a>
-    </button>
-    <button mat-menu-item>
-        <a routerLink="/passions">Passions</a>
-    </button>
-  </mat-menu>
-</div>
 </div>
